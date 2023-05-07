@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png">
+    <title>GlamGarb</title>
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <style>
+        .product-details {
+            padding-top: 70px;
+            padding-bottom: 50px;
+        }
+        
+        .product__details__text h3 {
+            color: #111111;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        
+        .product__details__text h3 span {
+            display: block;
+            font-size: 14px;
+            color: #444444;
+            text-transform: none;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+        
+        .product__details__text .rating {
+            margin-bottom: 16px;
+        }
+        
+        .product__details__text .rating i {
+            font-size: 12px;
+            color: #e3c01c;
+            margin-right: -4px;
+        }
+        
+        .product__details__text .rating span {
+            font-size: 12px;
+            color: #666666;
+            margin-left: 5px;
+        }
+        
+        .product__details__text p {
+            color: #444444;
+            margin-bottom: 28px;
+        }
+        
+        .product__details__price {
+            font-size: 30px;
+            font-weight: 600;
+            color: rgba(143, 58, 223, 0.645);
+            margin-bottom: 30px;
+        }
+        
+        .product__details__price span {
+            font-size: 18px;
+            color: #b1b0b0;
+            text-decoration: line-through;
+            margin-left: 10px;
+            display: inline-block;
+        }
+        
+        .quantity {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .quantity>span {
+            font-size: 14px;
+            color: #111111;
+            font-weight: 600;
+            float: left;
+            margin-top: 14px;
+            margin-right: 15px;
+        }
+        
+        .pro-qty {
+            height: 50px;
+            width: 150px;
+            border: 1px solid #ebebeb;
+            border-radius: 50px;
+            padding: 0 20px;
+            overflow: hidden;
+            display: inline-block;
+        }
+        
+        .pro-qty .qtybtn {
+            font-size: 14px;
+            color: #666666;
+            cursor: pointer;
+            float: left;
+            width: 12px;
+            line-height: 46px;
+        }
+        
+        .pro-qty input {
+            font-size: 14px;
+            color: #666666;
+            font-weight: 500;
+            border: none;
+            float: left;
+            width: 84px;
+            text-align: center;
+            height: 48px;
+        }
+        
+        .product__details__button {
+            overflow: hidden;
+            margin-bottom: 25px;
+        }
+        
+        .product__details__button .cart-btn {
+            display: inline-block;
+            font-size: 14px;
+            color: #ffffff;
+            background: rgba(143, 58, 223, 0.821);
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 14px 30px 15px;
+            border-radius: 50px;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .product__details__button ul {
+            float: left;
+        }
+        
+        .product__details__button ul li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        
+        .product__details__button ul li:last-child {
+            margin-right: 0;
+        }
+        
+        .product__details__button ul li a {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            border: 1px solid #ebebeb;
+            border-radius: 50%;
+            line-height: 50px;
+            text-align: center;
+            padding-top: 1px;
+        }
+        
+        .product__details__button ul li a span {
+            font-size: 18px;
+            color: #666666;
+        }
+        
+        .product__details__widget {
+            border-top: 1px solid #ebebeb;
+            padding-top: 35px;
+        }
+        
+        .product__details__widget ul li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        
+        .product__details__widget ul li:last-child {
+            margin-bottom: 0;
+        }
+        
+        .product__details__widget ul li span {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #111111;
+            width: 150px;
+            float: left;
+        }
+        
+        .product__details__widget ul li .stock__checkbox {
+            overflow: hidden;
+        }
+        
+        .product__details__widget ul li .stock__checkbox label {
+            display: block;
+            padding-left: 20px;
+            font-size: 14px;
+            color: #666666;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .product__details__widget ul li .stock__checkbox label input {
+            position: absolute;
+            visibility: hidden;
+        }
+        
+        .product__details__widget ul li .stock__checkbox label input:checked~.checkmark {
+            border-color: #ca1515;
+        }
+        
+        .product__details__widget ul li .stock__checkbox label input:checked~.checkmark:after {
+            border-color: #ca1515;
+            opacity: 1;
+        }
+        
+        .product__details__widget ul li .stock__checkbox label .checkmark {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            height: 10px;
+            width: 10px;
+            border: 1px solid #444444;
+            border-radius: 2px;
+        }
+        
+        .product__details__widget ul li .stock__checkbox label .checkmark:after {
+            position: absolute;
+            left: 0px;
+            top: -2px;
+            width: 11px;
+            height: 5px;
+            border: solid #ffffff;
+            border-width: 1.5px 1.5px 0px 0px;
+            -webkit-transform: rotate(127deg);
+            -ms-transform: rotate(127deg);
+            transform: rotate(127deg);
+            opacity: 0;
+            content: "";
+        }
+        
+        .product__details__widget ul li .color__checkbox label {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            margin-right: 20px;
+        }
+        
+        .product__details__widget ul li .color__checkbox label.active input~.checkmark:after {
+            border-color: #ffffff;
+            opacity: 1;
+        }
+        
+        .product__details__widget ul li .color__checkbox label:last-child {
+            margin-right: 0;
+        }
+        
+        .product__details__widget ul li .color__checkbox label input {
+            position: absolute;
+            visibility: hidden;
+        }
+        
+        .product__details__widget ul li .color__checkbox label input:checked~.checkmark:after {
+            border-color: #ffffff;
+            opacity: 1;
+        }
+        
+        .product__details__widget ul li .color__checkbox label .checkmark {
+            position: absolute;
+            left: 0;
+            top: -10px;
+            height: 20px;
+            width: 20px;
+            background: #e31e2f;
+            border-radius: 50%;
+            content: "";
+        }
+        
+        .product__details__widget ul li .color__checkbox label .checkmark.black-bg {
+            background: #111111;
+        }
+        
+        .product__details__widget ul li .color__checkbox label .checkmark.grey-bg {
+            background: #e4aa8b;
+        }
+        
+        .product__details__widget ul li .color__checkbox label .checkmark:after {
+            position: absolute;
+            left: 3px;
+            top: 5px;
+            width: 13px;
+            height: 6px;
+            border: solid #ffffff;
+            border-width: 1.5px 1.5px 0px 0px;
+            -webkit-transform: rotate(127deg);
+            -ms-transform: rotate(127deg);
+            transform: rotate(127deg);
+            opacity: 0;
+            content: "";
+        }
+        
+        .product__details__widget ul li .size__btn label {
+            font-size: 14px;
+            color: #666666;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-right: 10px;
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        
+        .product__details__widget ul li .size__btn label:last-child {
+            margin-right: 0;
+        }
+        
+        .product__details__widget ul li .size__btn label.active {
+            color: #ca1515;
+        }
+        
+        .product__details__widget ul li .size__btn label input {
+            position: absolute;
+            visibility: hidden;
+        }
+        
+        .product__details__widget ul li p {
+            margin-bottom: 0;
+            color: #666666;
+        }
+        
+        .product__details__tab {
+            padding-top: 80px;
+            margin-bottom: 65px;
+        }
+        
+        .nav {
+            border-bottom: none;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 40px;
+        }
+        
+        .nav::before {
+            position: absolute;
+            left: 0;
+            top: 13px;
+            height: 1px;
+            width: 335px;
+            background: #e1e1e1;
+            content: "";
+        }
+        
+        .nav::after {
+            position: absolute;
+            right: 0;
+            top: 13px;
+            height: 1px;
+            width: 335px;
+            background: #e1e1e1;
+            content: "";
+        }
+        
+        .nav-item {
+            margin-right: 46px;
+        }
+        
+        .nav-item:last-child {
+            margin-right: 0;
+        }
+        
+        .nav-item .nav-link {
+            font-size: 18px;
+            color: #666666;
+            font-weight: 600;
+            border: none;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            padding: 0;
+        }
+        
+        .nav-item .nav-link.active {
+            color: #111111;
+        }
+        
+        .tab-content .tab-pane h6 {
+            color: #666666;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        
+        .tab-content .tab-pane p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .related__title h5 {
+            font-size: 20px;
+            color: #111111;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+        }
+        
+        .small-img-group {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .small-img-col {
+            flex-basis: 24%;
+            display: flex;
+            justify-content: center;
+            margin-right: 100px;
+        }
+        
+        .small-img-col img {
+            padding-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+
+
+
+        <div class="header-main">
+
+            <div class="container">
+
+                <a href="#" class="header-logo">
+                    <img class="logo-head" src="logo.png" alt="Anon's logo" width="120" height="36">
+                </a>
+
+                <div class="header-search-container">
+
+                    <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+                    <button class="search-btn">
+            <ion-icon name="search-outline" role="img" class="md hydrated" aria-label="search outline"></ion-icon>
+          </button>
+
+                </div>
+
+                <div class="header-user-actions">
+                    <button class="action-btn">
+            <ion-icon onclick="window.location.href='shoping-cart.html';" name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+                    <button class="action-btn">
+            <ion-icon onclick="window.location.href='shoping-cart.html';" name="bag-handle-outline" role="img" class="md hydrated" aria-label="bag handle outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <nav class="desktop-navigation-menu">
+
+            <div class="container">
+
+                <ul class="desktop-menu-category-list">
+
+                    <li class="menu-category">
+                        <a href="index.html" class="menu-title">Home</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="product.html" class="menu-title">Categories</a>
+
+                        <div class="dropdown-panel">
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="product.html">Women's</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="product.html">Formal</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="product.html">Casual</a>
+                                </li>
+                                <li class="panel-list-item">
+                                    <a href="product2.html">Jewelry</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-category">
+                        <a href="product.html" class="menu-title">Women's</a>
+
+                        <ul class="dropdown-list">
+
+                            <li class="dropdown-item">
+                                <a href="product.html">Dress &amp; Frock</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="product2.html">Earrings</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="product2.html">Necklace</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="product2.html" class="menu-title">Jewelry</a>
+                    </li>
+                    <li class="menu-category">
+                        <a href="contact.html" class="menu-title">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <div class="mobile-bottom-navigation">
+
+            <button class="action-btn" data-mobile-menu-open-btn="">
+        <ion-icon name="menu-outline" role="img" class="md hydrated" aria-label="menu outline"></ion-icon>
+      </button>
+
+            <button class="action-btn">
+        <ion-icon name="bag-handle-outline" role="img" class="md hydrated" aria-label="bag handle outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+            <button class="action-btn">
+        <ion-icon name="home-outline" role="img" class="md hydrated" aria-label="home outline"></ion-icon>
+      </button>
+
+            <button class="action-btn">
+        <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+            <button class="action-btn" data-mobile-menu-open-btn="">
+        <ion-icon name="grid-outline" role="img" class="md hydrated" aria-label="grid outline"></ion-icon>
+      </button>
+
+        </div>
+
+        <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu="">
+
+            <div class="menu-top">
+                <h2 class="menu-title">Menu</h2>
+
+                <button class="menu-close-btn" data-mobile-menu-close-btn="">
+          <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
+        </button>
+            </div>
+
+            <ul class="mobile-menu-category-list">
+
+                <li class="menu-category">
+
+                    <button class="accordion-menu" data-accordion-btn="">
+            <p class="menu-title">Women's</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon md hydrated" role="img" aria-label="add outline"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon md hydrated" role="img" aria-label="remove outline"></ion-icon>
+            </div>
+          </button>
+
+                    <ul class="submenu-category-list" data-accordion="">
+
+                        <li class="submenu-category">
+                            <a href="product.html" class="submenu-title">Dress &amp; Frock</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="product2.html" class="submenu-title">Earrings</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="product2.html" class="submenu-title">Necklace</a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="menu-category">
+
+                    <button class="accordion-menu" data-accordion-btn="">
+            <p class="menu-title">Jewelry</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon md hydrated" role="img" aria-label="add outline"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon md hydrated" role="img" aria-label="remove outline"></ion-icon>
+            </div>
+          </button>
+                </li>
+
+                <li class="menu-category">
+
+                    <button class="accordion-menu" data-accordion-btn="">
+            <div>
+              <ion-icon name="add-outline" class="add-icon md hydrated" role="img" aria-label="add outline"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon md hydrated" role="img" aria-label="remove outline"></ion-icon>
+            </div>
+          </button>
+
+
+
+                </li>
+            </ul>
+
+            <div class="menu-bottom">
+
+                <ul class="menu-category-list">
+
+                    <li class="menu-category">
+
+                        <button class="accordion-menu" data-accordion-btn="">
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back md hydrated" role="img" aria-label="caret back outline"></ion-icon>
+            </button>
+
+                        <ul class="submenu-category-list" data-accordion="">
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">English</a>
+                            </li>
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">Español</a>
+                            </li>
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">Frençh</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="menu-category">
+                        <button class="accordion-menu" data-accordion-btn="">
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back md hydrated" role="img" aria-label="caret back outline"></ion-icon>
+            </button>
+
+                        <ul class="submenu-category-list" data-accordion="">
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">USD $</a>
+                            </li>
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">EUR €</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <ul class="menu-social-container">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Product Details Section Begin -->
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <img class="s-p-img img-fluid w-100% pb-1" src="product/product7.jpeg" alt="dress">
+                    <div class="small-img-group my-3">
+                        <div class="small-img-col">
+                            <img width="100%" class="small-img" src="product/product71.jpeg" alt="">
+                            <img width="100%" class="small-img" src="product/product72.jpeg" alt="">
+                            <img width="100%" class="small-img" src="product/product73.jpeg" alt="">
+                            <img width="100%" class="small-img" src="product/product74.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product__details__text">
+                        <h3>Essential Mini Dress <span>Brand: Vero Moda Textured Polyester Round Neck Women's Mini Dress</span></h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <span>( 138 reviews )</span>
+                        </div>
+                        <div class="product__details__price">$ 75.0 <span>$ 83.0</span></div>
+                        <p>Vero Moda Is The Brand Of Choice For The Fashion-Conscious, Independent Young Woman Who Wants To Dress Smart And Pay Less. Vero Moda Offers Quality</p>
+                        <div class="product__details__button">
+                            <div class="quantity">
+                                <span>Quantity:</span>
+                                <div class="pro-qty">
+                                    <input type="text" value="1">
+                                </div>
+                            </div>
+                            <a href="shoping-cart.html" class="cart-btn"><span class="icon_bag_alt"></span> Add to cart</a>
+                        </div>
+                        <div class="product__details__widget">
+                            <ul>
+                                <li>
+                                    <span>Availability:</span>
+                                    <div class="stock__checkbox">
+                                        <label for="stockin">
+                                            In Stock
+                                            <input type="checkbox" id="stockin" checked>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Available color:</span>
+                                    <div class="color__checkbox">
+                                        <label for="red">
+                                            <input type="radio" name="color__radio" id="red" checked>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label for="black">
+                                            <input type="radio" name="color__radio" id="black">
+                                            <span class="checkmark black-bg"></span>
+                                        </label>
+                                        <label for="grey">
+                                            <input type="radio" name="color__radio" id="grey">
+                                            <span class="checkmark grey-bg"></span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Available size:</span>
+                                    <div class="size__btn">
+                                        <label for="xs-btn" class="active">
+                                            <input type="radio" id="xs-btn">
+                                            xs
+                                        </label>
+                                        <label for="s-btn">
+                                            <input type="radio" id="s-btn">
+                                            s
+                                        </label>
+                                        <label for="m-btn">
+                                            <input type="radio" id="m-btn">
+                                            m
+                                        </label>
+                                        <label for="l-btn">
+                                            <input type="radio" id="l-btn">
+                                            l
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Promotions:</span>
+                                    <p>Free shipping</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="product__details__tab">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Description</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                <p>Vero Moda Is The Brand Of Choice For The Fashion-Conscious, Independent Young Woman Who Wants To Dress Smart And Pay Less. Vero Moda Offers Quality, Affordable And Inspiring Clothing For The Young Woman Who Wants To Look
+                                    Good And Have Fun With Her Look In A Trustworthy Fashion-Oriented Context. You can reach out to Brand at: 022-66489048 or help@veromoda.in.</p>
+                                <p>Vero Moda Is The Brand Of Choice For The Fashion-Conscious, Independent Young Woman Who Wants To Dress Smart And Pay Less. Vero Moda Offers Quality, Affordable And Inspiring Clothing For The Young Woman Who Wants To Look
+                                    Good And Have Fun With Her Look In A Trustworthy Fashion-Oriented Context. You can reach out to Brand at: 022-66489048 or help@veromoda.in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="s-cat mb-50 wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="cat-icon">
+                            <img src="product/service1.svg" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5 class="s-h">Fast &amp; Free Delivery</h5>
+                            <p class="s-v">Free delivery on all orders</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="s-cat mb-50 wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="cat-icon">
+                            <img src="product/services2.svg" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5 class="s-h">Secure Payment</h5>
+                            <p class="s-v">Free delivery on all orders</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="s-cat mb-50 wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="cat-icon">
+                            <img src="product/services3.svg" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5 class="s-h">Money Back Guarantee</h5>
+                            <p class="s-v">Free delivery on all orders</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="s-cat mb-50 wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="cat-icon">
+                            <img src="product/services4.svg" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5 class="s-h">Online Support</h5>
+                            <p class="s-v">Free delivery on all orders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-nav">
+
+            <div class="container">
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Popular Categories</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Electronic</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Cosmetic</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Health</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Watches</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Products</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Prices drop</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">New products</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Best sales</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Contact us</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Sitemap</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Our Company</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Delivery</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Legal Notice</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Terms and conditions</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">About us</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Secure payment</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Services</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Prices drop</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">New products</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Best sales</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Contact us</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Sitemap</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Contact</h2>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline" role="img" class="md hydrated" aria-label="location outline"></ion-icon>
+                        </div>
+
+                        <address class="content">
+              419 State 414 Rte
+              Beaver Dams, New York(NY), 14812, USA
+            </address>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="call-outline" role="img" class="md hydrated" aria-label="call outline"></ion-icon>
+                        </div>
+
+                        <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline" role="img" class="md hydrated" aria-label="mail outline"></ion-icon>
+                        </div>
+
+                        <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Follow Us</h2>
+                    </li>
+
+                    <li>
+                        <ul class="social-link">
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <img src="payment.png" alt="payment method" class="payment-img">
+
+                <p class="copyright">
+                    <a href="#"><img src="logo.png" alt=""></a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script3.js"></script>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</body>
+
+</html>
